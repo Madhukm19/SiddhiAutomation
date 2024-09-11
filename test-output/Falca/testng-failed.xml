@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Falca]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Admin- Load creation(failed)">
+    <parameter name="password" value="Falca@2018"/>
+    <parameter name="userName" value="santosh2018@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.InvoiceCalculation">
+        <methods>
+          <include name="invoiceCalculation"/>
+          <include name="openApplication"/>
+          <include name="userRole"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.InvoiceCalculation -->
+    </classes>
+  </test> <!-- Admin- Load creation(failed) -->
+</suite> <!-- Failed suite [Falca] -->

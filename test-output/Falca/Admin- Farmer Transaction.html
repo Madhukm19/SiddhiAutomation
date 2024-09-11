@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Admin- Farmer Transaction</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin- Farmer Transaction</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 19 17:18:47 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>106 seconds (106571 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.FarmerTransaction.validateUnits()'><b>validateUnits</b><br>Test class: script.FarmerTransaction<br>Test method: Validatios for units field</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.invoice()'><b>invoice</b><br>Test class: script.FarmerTransaction<br>Test method: Confirm bank by giving Payment date</td>
+<td></td>
+<td>17</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.addCrop()'><b>addCrop</b><br>Test class: script.FarmerTransaction<br>Test method: Validate crop added successfully toast message</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateCategory()'><b>validateCategory</b><br>Test class: script.FarmerTransaction<br>Test method: Validatios for category field</td>
+<td></td>
+<td>4</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.enterSoot()'><b>enterSoot</b><br>Test class: script.FarmerTransaction<br>Test method: Enter soot</td>
+<td></td>
+<td>1</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.assignLoad()'><b>assignLoad</b><br>Test class: script.FarmerTransaction<br>Test method: Validate assign load</td>
+<td></td>
+<td>22</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.ValidateCropName()'><b>ValidateCropName</b><br>Test class: script.FarmerTransaction<br>Test method: Validatios for crop name field</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.enterBasePrice()'><b>enterBasePrice</b><br>Test class: script.FarmerTransaction<br>Test method: Enter base price</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateSearchButton()'><b>validateSearchButton</b><br>Test class: script.FarmerTransaction<br>Test method: Validate search button<br/>
+<a href="#Output-1560243060" onClick='toggleBox("Output-1560243060", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1560243060" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1560243060">
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()=' Select State']"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'INBNRMARITA', ip: '172.27.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d72da57ee806f7caceca85a8f60ae07
+*** Element info: {Using=xpath, value=//div[text()=' Select State']}<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateAddCropBtn()'><b>validateAddCropBtn</b><br>Test class: script.FarmerTransaction<br>Test method: Validating add crop button</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.enterPhoneNumber()'><b>enterPhoneNumber</b><br>Test class: script.FarmerTransaction<br>Test method: Enter phone number</td>
+<td></td>
+<td>14</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.saveInvoiceNumber()'><b>saveInvoiceNumber</b><br>Test class: script.FarmerTransaction<br>Test method: Save invoice number</td>
+<td></td>
+<td>5</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.userDetails()'><b>userDetails</b><br>Test class: script.FarmerTransaction<br>Test method: Verify the Load Id present in user load details</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.farmerLinkValidation()'><b>farmerLinkValidation</b><br>Test class: script.FarmerTransaction<br>Test method: Register new farmer link validation</td>
+<td></td>
+<td>5</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateGrade()'><b>validateGrade</b><br>Test class: script.FarmerTransaction<br>Test method: Validatios for grade field</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.enterQuantity()'><b>enterQuantity</b><br>Test class: script.FarmerTransaction<br>Test method: Enter quantity</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.addMisc()'><b>addMisc</b><br>Test class: script.FarmerTransaction<br>Test method: Add miscellaneous charges</td>
+<td></td>
+<td>4</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+<tr>
+<td title='script.FarmerTransaction.transaction()'><b>transaction</b><br>Test class: script.FarmerTransaction<br>Test method: Validate Invoice Success Toast Message</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@15bb5034</td></tr>
+</table><p>
+</body>
+</html>

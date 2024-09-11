@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Falca DSC Logistics Flow- Admin]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Admin Transport Payments(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.GodownAdminTransportPayments">
+        <methods>
+          <include name="openApplication"/>
+          <include name="transportPayments"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.GodownAdminTransportPayments -->
+    </classes>
+  </test> <!-- Admin Transport Payments(failed) -->
+</suite> <!-- Failed suite [Falca DSC Logistics Flow- Admin] -->

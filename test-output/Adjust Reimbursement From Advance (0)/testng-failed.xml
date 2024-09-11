@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Adjust Reimbursement From Advance (0)]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="script.CustomizedEmailableReport"/>
+  </listeners>
+  <test thread-count="5" name="Reimbursement Approve By Manager(failed)">
+    <parameter name="password" value="285834"/>
+    <parameter name="EmployeePhoneNo" value="7788778866"/>
+    <parameter name="userName" value="qaautomation089@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.AdjustReimbByManager">
+        <methods>
+          <include name="openApplication"/>
+          <include name="validateManagerApprovedReim"/>
+          <include name="closeApplication"/>
+          <include name="validatePendingReimbursement"/>
+        </methods>
+      </class> <!-- script.AdjustReimbByManager -->
+    </classes>
+  </test> <!-- Reimbursement Approve By Manager(failed) -->
+  <test thread-count="5" name="Adjust Reimbursement By Verifier(failed)">
+    <parameter name="password" value="222222"/>
+    <parameter name="userName" value="falcafinance@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.AdjustReimbByVerifier">
+        <methods>
+          <include name="openApplication"/>
+          <include name="validatePendingReimbursement"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.AdjustReimbByVerifier -->
+    </classes>
+  </test> <!-- Adjust Reimbursement By Verifier(failed) -->
+  <test thread-count="5" name="Approver Pending Status(failed)">
+    <parameter name="password" value="170394"/>
+    <parameter name="userName" value="qaautomation055@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.ReimbursementHistory">
+        <methods>
+          <include name="validateApproverPendingStatus"/>
+          <include name="openApplication"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.ReimbursementHistory -->
+    </classes>
+  </test> <!-- Approver Pending Status(failed) -->
+  <test thread-count="5" name="Adjust Reimbursement By Approver(failed)">
+    <parameter name="password" value="222222"/>
+    <parameter name="userName" value="falcafinancetest@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.AdjustReimbByApprover">
+        <methods>
+          <include name="validateCompletedReimbursement"/>
+          <include name="openApplication"/>
+          <include name="validatePendingReimbursement"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.AdjustReimbByApprover -->
+    </classes>
+  </test> <!-- Adjust Reimbursement By Approver(failed) -->
+  <test thread-count="5" name="Closed Reimbursement Status(failed)">
+    <parameter name="password" value="170394"/>
+    <parameter name="userName" value="qaautomation055@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.ReimbursementHistory">
+        <methods>
+          <include name="openApplication"/>
+          <include name="validateClosedReimbursement"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.ReimbursementHistory -->
+    </classes>
+  </test> <!-- Closed Reimbursement Status(failed) -->
+</suite> <!-- Failed suite [Adjust Reimbursement From Advance (0)] -->

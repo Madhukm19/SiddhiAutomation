@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>TestNG:  Admin- SO creation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin- SO creation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat May 27 10:59:19 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>113 seconds (113255 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.CreateSalesOrder.validatePhoneNumber()'><b>validatePhoneNumber</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate phone number field</td>
+<td></td>
+<td>7</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.selectEndDate()'><b>selectEndDate</b><br>Test class: script.CreateSalesOrder<br>Test method: Select SO end date field</td>
+<td></td>
+<td>1</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.generateSoNumber()'><b>generateSoNumber</b><br>Test class: script.CreateSalesOrder<br>Test method: Generate SO button color validation</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validatEndDate()'><b>validatEndDate</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate SO end date field</td>
+<td></td>
+<td>2</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validateGrade()'><b>validateGrade</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate grade dropdown</td>
+<td></td>
+<td>2</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.enterPrice()'><b>enterPrice</b><br>Test class: script.CreateSalesOrder<br>Test method: Enter consumer price</td>
+<td></td>
+<td>2</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validateAddCropButton()'><b>validateAddCropButton</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate add crop button</td>
+<td></td>
+<td>1</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.enterPhoneNumber()'><b>enterPhoneNumber</b><br>Test class: script.CreateSalesOrder<br>Test method: Enter valid phone number</td>
+<td></td>
+<td>17</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.addCrop()'><b>addCrop</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate crop added toast message</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validateUnit()'><b>validateUnit</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate unit dropdown</td>
+<td></td>
+<td>5</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.userCardValidation()'><b>userCardValidation</b><br>Test class: script.CreateSalesOrder<br>Test method: Buyer user details validation</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validateStartDate()'><b>validateStartDate</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate SO start date field</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.cancelPoValidation()'><b>cancelPoValidation</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate cancel po toast message</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.searchButton()'><b>searchButton</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate search button</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.selectStartDate()'><b>selectStartDate</b><br>Test class: script.CreateSalesOrder<br>Test method: Select SO start date</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validateCategory()'><b>validateCategory</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate category dropdown</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validateCropName()'><b>validateCropName</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate crop name dropdown</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.generateSO()'><b>generateSO</b><br>Test class: script.CreateSalesOrder<br>Test method: Generate SO number and save it in write properties</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.enterQuantity()'><b>enterQuantity</b><br>Test class: script.CreateSalesOrder<br>Test method: Enter valid quantity</td>
+<td></td>
+<td>1</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.poCreation()'><b>poCreation</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate SO creation success toast message</td>
+<td></td>
+<td>2</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validateQuantity()'><b>validateQuantity</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate quantity field</td>
+<td></td>
+<td>8</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validatePrice()'><b>validatePrice</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate price field</td>
+<td></td>
+<td>8</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.validateSaveButton()'><b>validateSaveButton</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate save button</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.buyerLinkValidation()'><b>buyerLinkValidation</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate register new buyer link</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.buyerOnboardingPage()'><b>buyerOnboardingPage</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate buyer onboarding page</td>
+<td></td>
+<td>9</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.deliveryDistrictValidation()'><b>deliveryDistrictValidation</b><br>Test class: script.CreateSalesOrder<br>Test method: Validate delivery location</td>
+<td></td>
+<td>10</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrder.addButton()'><b>addButton</b><br>Test class: script.CreateSalesOrder<br>Test method: Add button color validation</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrder@248e319b</td></tr>
+</table><p>
+</body>
+</html>

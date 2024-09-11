@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Adjust Reimbursement From Advance]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="script.CustomizedEmailableReport"/>
+  </listeners>
+  <test thread-count="5" name="Reimbursement Approve By Manager(failed)">
+    <parameter name="password" value="285834"/>
+    <parameter name="EmployeePhoneNo" value="7788778866"/>
+    <parameter name="userName" value="qaautomation089@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.ReimbApprovalByManager">
+        <methods>
+          <include name="openApplication"/>
+          <include name="closeApplication"/>
+          <include name="validateReimApprovedPopup"/>
+        </methods>
+      </class> <!-- script.ReimbApprovalByManager -->
+    </classes>
+  </test> <!-- Reimbursement Approve By Manager(failed) -->
+  <test thread-count="5" name="Advance Approve By Verifier(failed)">
+    <parameter name="password" value="222222"/>
+    <parameter name="EmployeePhoneNo" value="7788778866"/>
+    <parameter name="userName" value="falcafinance@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.AdvanceApproveByVerifier">
+        <methods>
+          <include name="falcaCenter"/>
+          <include name="resetButton"/>
+          <include name="openApplication"/>
+          <include name="approvePayments"/>
+          <include name="refreshButton"/>
+          <include name="searchButton"/>
+          <include name="validatePageHeading"/>
+          <include name="closeApplication"/>
+          <include name="validateNameField"/>
+        </methods>
+      </class> <!-- script.AdvanceApproveByVerifier -->
+    </classes>
+  </test> <!-- Advance Approve By Verifier(failed) -->
+  <test thread-count="5" name="Advance Approve By Approver(failed)">
+    <parameter name="password" value="222222"/>
+    <parameter name="EmployeePhoneNo" value="7788778866"/>
+    <parameter name="userName" value="falcafinancetest@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.AdvanceApproveByApprover">
+        <methods>
+          <include name="validateNameField"/>
+          <include name="validatePageHeading" invocation-numbers="0"/>
+          <include name="openApplication"/>
+          <include name="approvePayments"/>
+          <include name="refreshButton"/>
+          <include name="resetButton"/>
+          <include name="closeApplication"/>
+          <include name="falcaCenter"/>
+          <include name="searchButton"/>
+        </methods>
+      </class> <!-- script.AdvanceApproveByApprover -->
+    </classes>
+  </test> <!-- Advance Approve By Approver(failed) -->
+</suite> <!-- Failed suite [Adjust Reimbursement From Advance] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [login]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="login(failed)">
+    <parameter name="password" value="666666"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.test">
+        <methods>
+          <include name="openApplication"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- script.test -->
+    </classes>
+  </test> <!-- login(failed) -->
+</suite> <!-- Failed suite [login] -->

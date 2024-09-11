@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Falca DSC Logistics Flow- BDE]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BDE- Logistics SO creation(failed)">
+    <parameter name="password" value="505929"/>
+    <parameter name="userName" value="falcabde@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.CreateSalesOrderLogistics">
+        <methods>
+          <include name="openApplication"/>
+          <include name="validatePhoneNumber"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.CreateSalesOrderLogistics -->
+    </classes>
+  </test> <!-- BDE- Logistics SO creation(failed) -->
+</suite> <!-- Failed suite [Falca DSC Logistics Flow- BDE] -->

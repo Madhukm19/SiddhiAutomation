@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Testing- Falca DSC Consumer Flow]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="script.CustomizedEmailableReport"/>
+  </listeners>
+  <test thread-count="5" name="Admin- Create Load(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.LoadCreation">
+        <methods>
+          <include name="openApplication"/>
+          <include name="createLoad"/>
+          <include name="userRole"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.LoadCreation -->
+    </classes>
+  </test> <!-- Admin- Create Load(failed) -->
+  <test thread-count="5" name="Admin- Farmer Transaction(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.FarmerTransaction">
+        <methods>
+          <include name="saveInvoiceNumber"/>
+          <include name="openApplication"/>
+          <include name="assignLoad"/>
+          <include name="userRole"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.FarmerTransaction -->
+    </classes>
+  </test> <!-- Admin- Farmer Transaction(failed) -->
+  <test thread-count="5" name="Admin- DSC Payments(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.AdminDSCPayments">
+        <methods>
+          <include name="openApplication"/>
+          <include name="userRole"/>
+          <include name="approvePayments"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.AdminDSCPayments -->
+    </classes>
+  </test> <!-- Admin- DSC Payments(failed) -->
+  <test thread-count="5" name="Finance- DSC Payments(failed)">
+    <parameter name="password" value="111111"/>
+    <parameter name="userName" value="falcafinance@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.FinancePayments">
+        <methods>
+          <include name="enterReferenceNumber"/>
+          <include name="openApplication"/>
+          <include name="userRole"/>
+          <include name="paymentModeFarmer"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.FinancePayments -->
+    </classes>
+  </test> <!-- Finance- DSC Payments(failed) -->
+  <test thread-count="5" name="Admin- Paymemt Close(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.NewAdminPaymentCloseConsumer">
+        <methods>
+          <include name="openApplication"/>
+          <include name="userRole"/>
+          <include name="closeApplication"/>
+          <include name="closePayments"/>
+        </methods>
+      </class> <!-- script.NewAdminPaymentCloseConsumer -->
+    </classes>
+  </test> <!-- Admin- Paymemt Close(failed) -->
+  <test thread-count="5" name="Admin- Close SO(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.NewClosePoConsumer">
+        <methods>
+          <include name="openApplication"/>
+          <include name="closePO"/>
+          <include name="userRole"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.NewClosePoConsumer -->
+    </classes>
+  </test> <!-- Admin- Close SO(failed) -->
+</suite> <!-- Failed suite [Sanity Testing- Falca DSC Consumer Flow] -->

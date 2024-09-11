@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Falca (0)]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="script.CustomizedEmailableReport"/>
+  </listeners>
+  <test thread-count="5" name="Admin- Farmer Transaction payment pending(failed)">
+    <parameter name="password" value="505929"/>
+    <parameter name="userName" value="falcabde@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.NewFarmerTransaction">
+        <methods>
+          <include name="openApplication"/>
+          <include name="userRole"/>
+          <include name="paymentpendingfilter"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.NewFarmerTransaction -->
+    </classes>
+  </test> <!-- Admin- Farmer Transaction payment pending(failed) -->
+  <test thread-count="5" name="BDE- Farmer Transaction payment closed(failed)">
+    <parameter name="password" value="505929"/>
+    <parameter name="userName" value="falcabde@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.NewFarmerTransaction">
+        <methods>
+          <include name="openApplication"/>
+          <include name="userRole"/>
+          <include name="invoicenumberfilter"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.NewFarmerTransaction -->
+    </classes>
+  </test> <!-- BDE- Farmer Transaction payment closed(failed) -->
+</suite> <!-- Failed suite [Falca (0)] -->

@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>TestNG:  BDE- Logistics SO creation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BDE- Logistics SO creation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat May 27 10:33:47 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>134 seconds (134059 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validatePhoneNumber()'><b>validatePhoneNumber</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate phone number field<br/>
+<a href="#Output-744021169" onClick='toggleBox("Output-744021169", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-744021169" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-744021169">
+stale element reference: stale element not found
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'INBNRMARITA', ip: '172.26.1.124', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [027f34ec1de5d4ce905af84aaa09edd3, getElementText {id=D33028ED7ADD6EEE732F4C2A9B5B870C_element_355}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61479/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (027f34ec1de5d4ce905af84aaa09edd3)] -> xpath: //div[text()='Enter PhoneNumber or CompanyName']]
+Session ID: 027f34ec1de5d4ce905af84aaa09edd3<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at script.CreateSalesOrderLogistics.validatePhoneNumber(CreateSalesOrderLogistics.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace744021169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace744021169'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at script.CreateSalesOrderLogistics.validatePhoneNumber(CreateSalesOrderLogistics.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.buyerOnboardingPage()'><b>buyerOnboardingPage</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validating Buyer Onboarding page</td>
+<td></td>
+<td>6</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validateQuantity()'><b>validateQuantity</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate quantity field</td>
+<td></td>
+<td>8</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.poCreation()'><b>poCreation</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate SO creation success toast message</td>
+<td></td>
+<td>1</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.enterPhoneNumber()'><b>enterPhoneNumber</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Enter valid phone number</td>
+<td></td>
+<td>20</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validateUnit()'><b>validateUnit</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate unit field</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validateCropName()'><b>validateCropName</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate crop name field</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.searchButtonValidation()'><b>searchButtonValidation</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validating search button</td>
+<td></td>
+<td>8</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validateStartDate()'><b>validateStartDate</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate start date field</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.deliveryDistrictValidation()'><b>deliveryDistrictValidation</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate Delivery location</td>
+<td></td>
+<td>17</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validateSaveButton()'><b>validateSaveButton</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate save button color</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.enterQuantity()'><b>enterQuantity</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Enter valid quantity</td>
+<td></td>
+<td>1</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validateAddCropBtn()'><b>validateAddCropBtn</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validating add crop button</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validatEndDate()'><b>validatEndDate</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate end date field</td>
+<td></td>
+<td>2</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.buyerLinkValidation()'><b>buyerLinkValidation</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Register new buyer link validation</td>
+<td></td>
+<td>5</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.addButton()'><b>addButton</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Add button color validation</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validatePrice()'><b>validatePrice</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate price field</td>
+<td></td>
+<td>9</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.validateCategory()'><b>validateCategory</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate category field</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.addCrop()'><b>addCrop</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate crop added toast message<br/>
+<a href="#Output-1141783782" onClick='toggleBox("Output-1141783782", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1141783782" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1141783782">
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Crop Added Successfully']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'INBNRMARITA', ip: '172.26.1.124', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [027f34ec1de5d4ce905af84aaa09edd3, findElement {using=xpath, value=//div[text()='Crop Added Successfully']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61479/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 027f34ec1de5d4ce905af84aaa09edd3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.searchButtonColor()'><b>searchButtonColor</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate search button color</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.cancelPoValidation()'><b>cancelPoValidation</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Validate cancel SO toast message</td>
+<td></td>
+<td>4</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.userCardValidation()'><b>userCardValidation</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Buyer user daetails validation</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.selectStartDate()'><b>selectStartDate</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Select start date field</td>
+<td></td>
+<td>0</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.addCropButton()'><b>addCropButton</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Add crop button color validation</td>
+<td></td>
+<td>1</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.generatePO()'><b>generatePO</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Generate SO number and save in write properties</td>
+<td></td>
+<td>4</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.selectEndDate()'><b>selectEndDate</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Select end date field</td>
+<td></td>
+<td>3</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.enterPrice()'><b>enterPrice</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Enter valid price</td>
+<td></td>
+<td>1</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+<tr>
+<td title='script.CreateSalesOrderLogistics.generateP0Number()'><b>generateP0Number</b><br>Test class: script.CreateSalesOrderLogistics<br>Test method: Generate SO number button color validation</td>
+<td></td>
+<td>2</td>
+<td>script.CreateSalesOrderLogistics@248e319b</td></tr>
+</table><p>
+</body>
+</html>

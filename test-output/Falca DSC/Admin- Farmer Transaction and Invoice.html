@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>TestNG:  Admin- Farmer Transaction and Invoice</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin- Farmer Transaction and Invoice</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 10 20:49:09 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>139 seconds (139541 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.FarmerTransaction.addCrop()'><b>addCrop</b><br>Test class: script.FarmerTransaction<br>Test method: Validate crop added successfully toast message</td>
+<td><div><pre>java.lang.AssertionError: expected [ Crop Added Successfully] but found [Crop Added Successfully]
+	at script.FarmerTransaction.addCrop(FarmerTransaction.java:370)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038754411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1038754411'><pre>java.lang.AssertionError: expected [ Crop Added Successfully] but found [Crop Added Successfully]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at script.FarmerTransaction.addCrop(FarmerTransaction.java:370)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.FarmerTransaction.validateUnits()'><b>validateUnits</b><br>Test class: script.FarmerTransaction<br>Test method: Validatios for units and grade fields</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.invoice()'><b>invoice</b><br>Test class: script.FarmerTransaction<br>Test method: Confirm bank by giving Payment date</td>
+<td></td>
+<td>29</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.farmerOnboardingPage()'><b>farmerOnboardingPage</b><br>Test class: script.FarmerTransaction<br>Test method: Validating Farmer Onboarding page</td>
+<td></td>
+<td>1</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.categoryValidate()'><b>categoryValidate</b><br>Test class: script.FarmerTransaction<br>Test method: Validatios for category and crop name fields</td>
+<td></td>
+<td>7</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateQuantity()'><b>validateQuantity</b><br>Test class: script.FarmerTransaction<br>Test method: Validate quantity field</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateBasePrice()'><b>validateBasePrice</b><br>Test class: script.FarmerTransaction<br>Test method: Validate base price field</td>
+<td></td>
+<td>1</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.assignLoad()'><b>assignLoad</b><br>Test class: script.FarmerTransaction<br>Test method: Validate assign load</td>
+<td></td>
+<td>13</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateMisc()'><b>validateMisc</b><br>Test class: script.FarmerTransaction<br>Test method: Validatios for miscellaneous charges</td>
+<td></td>
+<td>5</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.confirmStamp()'><b>confirmStamp</b><br>Test class: script.FarmerTransaction<br>Test method: Validate confirm stamp</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.saveInvoiceNumber()'><b>saveInvoiceNumber</b><br>Test class: script.FarmerTransaction<br>Test method: Save invoice number</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.userCardValidation()'><b>userCardValidation</b><br>Test class: script.FarmerTransaction<br>Test method: User card validation</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateSearchButton()'><b>validateSearchButton</b><br>Test class: script.FarmerTransaction<br>Test method: Validate search button<br/>
+<a href="#Output-1690018027" onClick='toggleBox("Output-1690018027", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1690018027" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1690018027">
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()=' Select State']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'INBNRMARITA', ip: '172.25.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 565b955e4d746cc01034aef7ae16193d
+*** Element info: {Using=xpath, value=//div[text()=' Select State']}<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.userDetails()'><b>userDetails</b><br>Test class: script.FarmerTransaction<br>Test method: Verify the Load Id present in user load details</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.searchUser()'><b>searchUser</b><br>Test class: script.FarmerTransaction<br>Test method: Validating search phone number field</td>
+<td></td>
+<td>31</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.deleteIconValidation()'><b>deleteIconValidation</b><br>Test class: script.FarmerTransaction<br>Test method: Delete icon validation</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.updateSoot()'><b>updateSoot</b><br>Test class: script.FarmerTransaction<br>Test method: Validate update soot</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateSoot()'><b>validateSoot</b><br>Test class: script.FarmerTransaction<br>Test method: Validatios for soot field</td>
+<td></td>
+<td>1</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.farmerLinkValidation()'><b>farmerLinkValidation</b><br>Test class: script.FarmerTransaction<br>Test method: Register new buyer link validation</td>
+<td></td>
+<td>5</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.validateAssignButton()'><b>validateAssignButton</b><br>Test class: script.FarmerTransaction<br>Test method: Validate assign button</td>
+<td></td>
+<td>1</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.invoiceDownloadOption()'><b>invoiceDownloadOption</b><br>Test class: script.FarmerTransaction<br>Test method: Validate invoice download option</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+<tr>
+<td title='script.FarmerTransaction.transaction()'><b>transaction</b><br>Test class: script.FarmerTransaction<br>Test method: Validate Invoice Success Toast Message</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerTransaction@229c6181</td></tr>
+</table><p>
+</body>
+</html>

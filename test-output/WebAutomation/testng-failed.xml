@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WebAutomation]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="script.CustomizedEmailableReport"/>
+  </listeners>
+  <test thread-count="5" name="Load Track(failed)">
+    <parameter name="password" value="693658"/>
+    <parameter name="userName" value="aliyadcosta9@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.27:4000/"/>
+    <classes>
+      <class name="script.CreatePO">
+        <methods>
+          <include name="openApplication"/>
+          <include name="GeneratePO"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.CreatePO -->
+    </classes>
+  </test> <!-- Load Track(failed) -->
+</suite> <!-- Failed suite [WebAutomation] -->

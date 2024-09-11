@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  Admin- Logistics Edit Track</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin- Logistics Edit Track</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 21 16:47:21 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>50 seconds (50147 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.godownRadioButton()'><b>godownRadioButton</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate Consumer, Godown and Logistics radio button</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.phoneNumberField()'><b>phoneNumberField</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate phone number or company name field</td>
+<td></td>
+<td>7</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.resetButtonColor()'><b>resetButtonColor</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate reset button color</td>
+<td></td>
+<td>2</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.searchButton()'><b>searchButton</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate search button</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validateUnloadedStage()'><b>validateUnloadedStage</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validations for payment date field in unloaded stage</td>
+<td></td>
+<td>5</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.invoiceDownloadUnloaded()'><b>invoiceDownloadUnloaded</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate invoice download option in unloaded stage</td>
+<td></td>
+<td>2</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validateTransportAmount()'><b>validateTransportAmount</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate transport amount in active stage</td>
+<td></td>
+<td>3</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.cropNameUnloadedStage()'><b>cropNameUnloadedStage</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate crop name</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.searchButtonColor()'><b>searchButtonColor</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate search button color</td>
+<td></td>
+<td>2</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validateLoadIdActive()'><b>validateLoadIdActive</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate load id in active stage</td>
+<td></td>
+<td>10</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validateloadedcard()'><b>validateloadedcard</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validation of loaded card details</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.buyerNameUnloadedStage()'><b>buyerNameUnloadedStage</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate buyer name</td>
+<td></td>
+<td>1</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validatePaymentDate()'><b>validatePaymentDate</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate payment date field in active stage</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validateactivecard()'><b>validateactivecard</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validation of active card details</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validateUnloadedStatus()'><b>validateUnloadedStatus</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate unloaded stage success toast message</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.viewMoreActive()'><b>viewMoreActive</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate view more option in active stage</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validateLoadIdLoaded()'><b>validateLoadIdLoaded</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate load id in loaded stage</td>
+<td></td>
+<td>4</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.invoiceDownloadLoaded()'><b>invoiceDownloadLoaded</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate invoice download option in loaded stage</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.resetButton()'><b>resetButton</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate reset button</td>
+<td></td>
+<td>2</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.viewMoreOptionUnloadedStage()'><b>viewMoreOptionUnloadedStage</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate view more option in unloaded stage</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.viewMoreLoaded()'><b>viewMoreLoaded</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate view more option in loaded stage</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.validateQuantity()'><b>validateQuantity</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate quantity field in loaded stage</td>
+<td></td>
+<td>2</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+<tr>
+<td title='script.NewLogisticsLoadTrack.loadIdUnloadedStage()'><b>loadIdUnloadedStage</b><br>Test class: script.NewLogisticsLoadTrack<br>Test method: Validate load id</td>
+<td></td>
+<td>0</td>
+<td>script.NewLogisticsLoadTrack@2e385cce</td></tr>
+</table><p>
+</body>
+</html>

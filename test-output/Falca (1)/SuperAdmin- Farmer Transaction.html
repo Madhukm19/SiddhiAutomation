@@ -1,0 +1,469 @@
+<html>
+<head>
+<title>TestNG:  SuperAdmin- Farmer Transaction</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SuperAdmin- Farmer Transaction</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 06 18:53:20 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>299 seconds (299577 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.NewFarmerTransaction.invoiceConfirm()'><b>invoiceConfirm</b><br>Test class: script.NewFarmerTransaction<br>Test method: Invoice confirmation<br/>
+<a href="#Output-829668707" onClick='toggleBox("Output-829668707", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-829668707" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-829668707">
+element click intercepted: Element <input type="text" class="select-dropdown" readonly="true" data-activates="select-options-3673d3bb-8416-f356-9c0c-81369ed7d5f9" value="Bank Confirmation"> is not clickable at point (683, 154). Other element would receive the click: <div class="input-field col s6">...</div>
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'INBNRMARITA', ip: '172.25.1.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bead13f1b75040a73df14f06cead7ddd<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at script.NewFarmerTransaction.invoiceConfirm(NewFarmerTransaction.java:658)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace829668707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace829668707'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at script.NewFarmerTransaction.invoiceConfirm(NewFarmerTransaction.java:658)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.centerpending()'><b>centerpending</b><br>Test class: script.NewFarmerTransaction<br>Test method: Center pending<br/>
+<a href="#Output-1044665461" onClick='toggleBox("Output-1044665461", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1044665461" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1044665461">
+element click intercepted: Element <input type="text" class="select-dropdown" readonly="true" data-activates="select-options-3673d3bb-8416-f356-9c0c-81369ed7d5f9" value="Bank Confirmation"> is not clickable at point (683, 154). Other element would receive the click: <div class="input-field col s6">...</div>
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'INBNRMARITA', ip: '172.25.1.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bead13f1b75040a73df14f06cead7ddd<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at script.NewFarmerTransaction.centerpending(NewFarmerTransaction.java:879)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1044665461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1044665461'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at script.NewFarmerTransaction.centerpending(NewFarmerTransaction.java:879)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.bankconfirm()'><b>bankconfirm</b><br>Test class: script.NewFarmerTransaction<br>Test method: Confirm bank by giving Payment date</td>
+<td><div><pre>java.lang.AssertionError: expected [Enter Payment Date] but found []
+	at script.NewFarmerTransaction.bankconfirm(NewFarmerTransaction.java:613)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace354353235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354353235'><pre>java.lang.AssertionError: expected [Enter Payment Date] but found []
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at script.NewFarmerTransaction.bankconfirm(NewFarmerTransaction.java:613)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.ValidateMisc()'><b>ValidateMisc</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validatios for miscellaneous charges<br/>
+<a href="#Output-1321168609" onClick='toggleBox("Output-1321168609", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1321168609" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1321168609">
+Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="__blaze-root"]/div[1]/div[3]/div[6]/img (tried for 60 second(s) with 500 milliseconds interval)<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at script.NewFarmerTransaction.ValidateMisc(NewFarmerTransaction.java:837)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1321168609", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1321168609'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at script.NewFarmerTransaction.ValidateMisc(NewFarmerTransaction.java:837)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>64</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.invoiceDownloadOption()'><b>invoiceDownloadOption</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate invoice download option<br/>
+<a href="#Output-1142274554" onClick='toggleBox("Output-1142274554", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1142274554" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1142274554">
+no such element: Unable to locate element: {"method":"css selector","selector":".dowloadInvoice"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'INBNRMARITA', ip: '172.25.1.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bead13f1b75040a73df14f06cead7ddd
+*** Element info: {Using=class name, value=dowloadInvoice}<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at script.NewFarmerTransaction.invoiceDownloadOption(NewFarmerTransaction.java:854)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1142274554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1142274554'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at script.NewFarmerTransaction.invoiceDownloadOption(NewFarmerTransaction.java:854)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.NewFarmerTransaction.addCrop()'><b>addCrop</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate crop added successfully toast message</td>
+<td></td>
+<td>0</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.confirmtButtonColor()'><b>confirmtButtonColor</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate confirm button color</td>
+<td></td>
+<td>12</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.userCardValidation()'><b>userCardValidation</b><br>Test class: script.NewFarmerTransaction<br>Test method: User card validation</td>
+<td></td>
+<td>1</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.validateSoot()'><b>validateSoot</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validatios for soot field</td>
+<td></td>
+<td>2</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.searchUser()'><b>searchUser</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validating search phone number field</td>
+<td></td>
+<td>24</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.saveInvoiceNumber()'><b>saveInvoiceNumber</b><br>Test class: script.NewFarmerTransaction<br>Test method: Save invoice number</td>
+<td></td>
+<td>5</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.assignLoad()'><b>assignLoad</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate assign load</td>
+<td></td>
+<td>36</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.categoryValidate()'><b>categoryValidate</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validatios for category and crop name fields</td>
+<td></td>
+<td>8</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.farmerLinkValidation()'><b>farmerLinkValidation</b><br>Test class: script.NewFarmerTransaction<br>Test method: Register new buyer link validation</td>
+<td></td>
+<td>6</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.updateSootButton()'><b>updateSootButton</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate update soot button</td>
+<td></td>
+<td>2</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.addMiscButton()'><b>addMiscButton</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate add misc button</td>
+<td></td>
+<td>12</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.deleteIconValidation()'><b>deleteIconValidation</b><br>Test class: script.NewFarmerTransaction<br>Test method: Delete icon validation</td>
+<td></td>
+<td>0</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.updateMisc()'><b>updateMisc</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate update misc</td>
+<td></td>
+<td>12</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.validateSearchButton()'><b>validateSearchButton</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate search button</td>
+<td></td>
+<td>11</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.validateQuantity()'><b>validateQuantity</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate quantity field</td>
+<td></td>
+<td>0</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.validateAssignButton()'><b>validateAssignButton</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate assign button</td>
+<td></td>
+<td>2</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.validateUnits()'><b>validateUnits</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validatios for units and grade fields</td>
+<td></td>
+<td>3</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.invoice()'><b>invoice</b><br>Test class: script.NewFarmerTransaction<br>Test method: Confirm bank by giving Payment date</td>
+<td></td>
+<td>15</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.validateMisc()'><b>validateMisc</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validatios for miscellaneous charges</td>
+<td></td>
+<td>8</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.farmerOnboardingPage()'><b>farmerOnboardingPage</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validating Farmer Onboarding page</td>
+<td></td>
+<td>1</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.updateSoot()'><b>updateSoot</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate update soot</td>
+<td></td>
+<td>17</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.addMiscButtonColor()'><b>addMiscButtonColor</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate add misc button color</td>
+<td></td>
+<td>2</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.updateSootButtonColor()'><b>updateSootButtonColor</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate update soot button color</td>
+<td></td>
+<td>2</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+<tr>
+<td title='script.NewFarmerTransaction.validateBasePrice()'><b>validateBasePrice</b><br>Test class: script.NewFarmerTransaction<br>Test method: Validate base price field</td>
+<td></td>
+<td>1</td>
+<td>script.NewFarmerTransaction@72c8e7b</td></tr>
+</table><p>
+</body>
+</html>

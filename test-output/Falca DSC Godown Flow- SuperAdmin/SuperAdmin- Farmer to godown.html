@@ -1,0 +1,347 @@
+<html>
+<head>
+<title>TestNG:  SuperAdmin- Farmer to godown</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SuperAdmin- Farmer to godown</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 26 17:49:36 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>181 seconds (181116 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.FarmerGodown.validateAssignButton()'><b>validateAssignButton</b><br>Test class: script.FarmerGodown<br>Test method: Validate assign button</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
+  (Session info: chrome=113.0.5672.127)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;INBNRMARITA&apos;, ip: &apos;172.26.1.124&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [04550e52c7fe9f25d5bf56373f2eb639, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58829/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04550e52c7fe9f25d5bf56373f2eb639
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:928)
+	at pom.FarmerTransactionPage.&lt;init&gt;(FarmerTransactionPage.java:216)
+	at script.FarmerGodown.validateAssignButton(FarmerGodown.java:642)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace590486503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace590486503'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
+  (Session info: chrome=113.0.5672.127)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;INBNRMARITA&apos;, ip: &apos;172.26.1.124&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [04550e52c7fe9f25d5bf56373f2eb639, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58829/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04550e52c7fe9f25d5bf56373f2eb639
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:928)
+	at pom.FarmerTransactionPage.&lt;init&gt;(FarmerTransactionPage.java:216)
+	at script.FarmerGodown.validateAssignButton(FarmerGodown.java:642)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.FarmerGodown.addCrop()'><b>addCrop</b><br>Test class: script.FarmerGodown<br>Test method: Validate crop added successfully toast message</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.addMisc()'><b>addMisc</b><br>Test class: script.FarmerGodown<br>Test method: Validations for miscellaneous charges</td>
+<td></td>
+<td>4</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateUnits()'><b>validateUnits</b><br>Test class: script.FarmerGodown<br>Test method: Validatios for units field</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.transaction()'><b>transaction</b><br>Test class: script.FarmerGodown<br>Test method: Validate Invoice Success Toast Message</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.assignLoad()'><b>assignLoad</b><br>Test class: script.FarmerGodown<br>Test method: Validate assign load</td>
+<td></td>
+<td>12</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.invoiceDownloadOption()'><b>invoiceDownloadOption</b><br>Test class: script.FarmerGodown<br>Test method: Validate invoice download option</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.userCardValidation()'><b>userCardValidation</b><br>Test class: script.FarmerGodown<br>Test method: User card validation</td>
+<td></td>
+<td>1</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateGrade()'><b>validateGrade</b><br>Test class: script.FarmerGodown<br>Test method: Validatios for grade field</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.searchButtonValidation()'><b>searchButtonValidation</b><br>Test class: script.FarmerGodown<br>Test method: Validating search button</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateMisc()'><b>validateMisc</b><br>Test class: script.FarmerGodown<br>Test method: Validations for miscellaneous charges</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.saveInvoiceNumber()'><b>saveInvoiceNumber</b><br>Test class: script.FarmerGodown<br>Test method: Save invoice number</td>
+<td></td>
+<td>5</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.saveButton()'><b>saveButton</b><br>Test class: script.FarmerGodown<br>Test method: Save button color validation</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.selectCategory()'><b>selectCategory</b><br>Test class: script.FarmerGodown<br>Test method: Select category dorpdown</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.enterBasePrice()'><b>enterBasePrice</b><br>Test class: script.FarmerGodown<br>Test method: Enter base price</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.farmerLinkValidation()'><b>farmerLinkValidation</b><br>Test class: script.FarmerGodown<br>Test method: Register new farmer link validation</td>
+<td></td>
+<td>10</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.userDetails()'><b>userDetails</b><br>Test class: script.FarmerGodown<br>Test method: Verify the Load Id present in user load details</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.confirmStamp()'><b>confirmStamp</b><br>Test class: script.FarmerGodown<br>Test method: Validate confirm stamp</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateBasePrice()'><b>validateBasePrice</b><br>Test class: script.FarmerGodown<br>Test method: Validate base price field</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.deleteIconValidation()'><b>deleteIconValidation</b><br>Test class: script.FarmerGodown<br>Test method: Delete icon validation</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateSearchButton()'><b>validateSearchButton</b><br>Test class: script.FarmerGodown<br>Test method: Validate search button and select State and District</td>
+<td></td>
+<td>32</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.farmerOnboardingPage()'><b>farmerOnboardingPage</b><br>Test class: script.FarmerGodown<br>Test method: Validating Farmer Onboarding page</td>
+<td></td>
+<td>4</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.ValidateCropName()'><b>ValidateCropName</b><br>Test class: script.FarmerGodown<br>Test method: Validatios for crop name field</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.enterSoot()'><b>enterSoot</b><br>Test class: script.FarmerGodown<br>Test method: Enter soot</td>
+<td></td>
+<td>1</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.addMiscButton()'><b>addMiscButton</b><br>Test class: script.FarmerGodown<br>Test method: Add misc button color validation</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.invoice()'><b>invoice</b><br>Test class: script.FarmerGodown<br>Test method: Confirm bank by giving Payment date</td>
+<td></td>
+<td>18</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.searchButton()'><b>searchButton</b><br>Test class: script.FarmerGodown<br>Test method: Search button color validation</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.selectUnits()'><b>selectUnits</b><br>Test class: script.FarmerGodown<br>Test method: Select units dropdown</td>
+<td></td>
+<td>5</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.updateSoot()'><b>updateSoot</b><br>Test class: script.FarmerGodown<br>Test method: Validate update soot</td>
+<td></td>
+<td>3</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateQuantity()'><b>validateQuantity</b><br>Test class: script.FarmerGodown<br>Test method: Validate quantity field</td>
+<td></td>
+<td>1</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateAddCropBtn()'><b>validateAddCropBtn</b><br>Test class: script.FarmerGodown<br>Test method: Validating add crop button</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateCategory()'><b>validateCategory</b><br>Test class: script.FarmerGodown<br>Test method: Validatios for category field</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.enterQuantity()'><b>enterQuantity</b><br>Test class: script.FarmerGodown<br>Test method: Enter quantity</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.enterPhoneNumber()'><b>enterPhoneNumber</b><br>Test class: script.FarmerGodown<br>Test method: Enter phone number</td>
+<td></td>
+<td>16</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateSearchBtn()'><b>validateSearchBtn</b><br>Test class: script.FarmerGodown<br>Test method: Validate search button color</td>
+<td></td>
+<td>0</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validateSoot()'><b>validateSoot</b><br>Test class: script.FarmerGodown<br>Test method: Validatios for soot field</td>
+<td></td>
+<td>2</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+<tr>
+<td title='script.FarmerGodown.validatePhoneNumber()'><b>validatePhoneNumber</b><br>Test class: script.FarmerGodown<br>Test method: Validating phone number field</td>
+<td></td>
+<td>10</td>
+<td>script.FarmerGodown@609e8838</td></tr>
+</table><p>
+</body>
+</html>

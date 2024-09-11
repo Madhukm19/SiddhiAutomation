@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Testing- Falca DSC Godown Flow]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="script.CustomizedEmailableReport"/>
+  </listeners>
+  <test thread-count="5" name="Admin- Godown to Consumer(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.GodownConsumer">
+        <methods>
+          <include name="openApplication"/>
+          <include name="validateAssignButton"/>
+          <include name="userRole"/>
+          <include name="closeApplication"/>
+          <include name="assignLoad"/>
+          <include name="searchUser"/>
+        </methods>
+      </class> <!-- script.GodownConsumer -->
+    </classes>
+  </test> <!-- Admin- Godown to Consumer(failed) -->
+  <test thread-count="5" name="Admin- Load Track(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.NewLoadTrack">
+        <methods>
+          <include name="validateQuantity"/>
+          <include name="openApplication"/>
+          <include name="invoiceDownloadLoaded"/>
+          <include name="validateTransportAmount"/>
+          <include name="validateLoadIdActive"/>
+          <include name="validatePaymentDate"/>
+          <include name="userRole"/>
+          <include name="validateUnloadedStage"/>
+          <include name="validateUnloadedStatus"/>
+          <include name="closeApplication"/>
+          <include name="validateLoadIdLoaded"/>
+        </methods>
+      </class> <!-- script.NewLoadTrack -->
+    </classes>
+  </test> <!-- Admin- Load Track(failed) -->
+  <test thread-count="5" name="Admin- DSC Payment(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.GodownAdminTransportPayments">
+        <methods>
+          <include name="openApplication"/>
+          <include name="userRole"/>
+          <include name="transportPayments"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.GodownAdminTransportPayments -->
+    </classes>
+  </test> <!-- Admin- DSC Payment(failed) -->
+  <test thread-count="5" name="Finance- DSC Payment(failed)">
+    <parameter name="password" value="111111"/>
+    <parameter name="userName" value="falcafinance@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:5000/"/>
+    <classes>
+      <class name="script.GodownFinanceConsumerPayments">
+        <methods>
+          <include name="paymentModeConsumer"/>
+          <include name="referenceIdConsumer"/>
+          <include name="openApplication"/>
+          <include name="userRole"/>
+          <include name="closeApplication"/>
+          <include name="consumerPayments"/>
+        </methods>
+      </class> <!-- script.GodownFinanceConsumerPayments -->
+    </classes>
+  </test> <!-- Finance- DSC Payment(failed) -->
+  <test thread-count="5" name="Admin- Close SO(failed)">
+    <parameter name="password" value="221909"/>
+    <parameter name="userName" value="falcadmn@gmail.com"/>
+    <parameter name="Url" value="http://172.26.1.37:4000/"/>
+    <classes>
+      <class name="script.NewClosePoConsumer">
+        <methods>
+          <include name="openApplication"/>
+          <include name="closePO"/>
+          <include name="userRole"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- script.NewClosePoConsumer -->
+    </classes>
+  </test> <!-- Admin- Close SO(failed) -->
+</suite> <!-- Failed suite [Sanity Testing- Falca DSC Godown Flow] -->

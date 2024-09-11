@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Siddhi(failed)">
+    <parameter name="password" value="Falca@123"/>
+    <parameter name="userName" value="superadmin"/>
+    <parameter name="Url" value="http://172.26.1.247:8001/"/>
+    <classes>
+      <class name="script.AddCompany">
+        <methods>
+          <include name="clickOnSaveButton"/>
+          <include name="enterGSTNumber"/>
+          <include name="clickOnNewAddress"/>
+          <include name="openApplication"/>
+          <include name="enterAddressLine"/>
+          <include name="enterPinCode"/>
+          <include name="enterCompanyAbbr"/>
+          <include name="enterCity"/>
+          <include name="enterState"/>
+        </methods>
+      </class> <!-- script.AddCompany -->
+    </classes>
+  </test> <!-- Siddhi(failed) -->
+</suite> <!-- Failed suite [Suite] -->

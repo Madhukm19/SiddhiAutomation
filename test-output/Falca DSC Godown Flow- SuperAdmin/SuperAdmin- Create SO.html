@@ -1,0 +1,231 @@
+<html>
+<head>
+<title>TestNG:  SuperAdmin- Create SO</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SuperAdmin- Create SO</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 26 17:46:57 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>82 seconds (82692 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.EditSalesOrderGodown.enterQuantity()'><b>enterQuantity</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Enter quantity</td>
+<td></td>
+<td>1</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.validateCategory()'><b>validateCategory</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validate category field</td>
+<td></td>
+<td>4</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.validateQuantity()'><b>validateQuantity</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validate quantity field</td>
+<td></td>
+<td>8</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.selectEndDate()'><b>selectEndDate</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Select end date field<br/>
+<a href="#Output-2142660176" onClick='toggleBox("Output-2142660176", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2142660176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2142660176">
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='enddate']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'INBNRMARITA', ip: '172.26.1.124', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e0134b429a4eec2ab1fba737c6a80e9, findElement {using=xpath, value=//input[@id='enddate']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58472/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e0134b429a4eec2ab1fba737c6a80e9<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.searchButton()'><b>searchButton</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validating search button</td>
+<td></td>
+<td>8</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.validatePhoneNumber()'><b>validatePhoneNumber</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validating phone number field</td>
+<td></td>
+<td>4</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.userCardValidation()'><b>userCardValidation</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Buyer user card validation</td>
+<td></td>
+<td>0</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.selectStartDate()'><b>selectStartDate</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Select start date field<br/>
+<a href="#Output-83532470" onClick='toggleBox("Output-83532470", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-83532470" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-83532470">
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='startdate']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'INBNRMARITA', ip: '172.26.1.124', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e0134b429a4eec2ab1fba737c6a80e9, findElement {using=xpath, value=//input[@id='startdate']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58472/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e0134b429a4eec2ab1fba737c6a80e9<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.validateUnit()'><b>validateUnit</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validate unit field</td>
+<td></td>
+<td>6</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.addCropButton()'><b>addCropButton</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validating add crop button</td>
+<td></td>
+<td>1</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.enterPhoneNumber()'><b>enterPhoneNumber</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validating search phone number field</td>
+<td></td>
+<td>15</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.validatEndDate()'><b>validatEndDate</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validate end date field<br/>
+<a href="#Output-452817647" onClick='toggleBox("Output-452817647", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-452817647" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-452817647">
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()=' Generate SO number ']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'INBNRMARITA', ip: '172.26.1.124', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e0134b429a4eec2ab1fba737c6a80e9, findElement {using=xpath, value=//div[text()=' Generate SO number ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58472/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e0134b429a4eec2ab1fba737c6a80e9<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.buyerLinkValidation()'><b>buyerLinkValidation</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Register new buyer link validation</td>
+<td></td>
+<td>4</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.validateCropEditedToast()'><b>validateCropEditedToast</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validate crop edited success toast message<br/>
+<a href="#Output-1093223281" onClick='toggleBox("Output-1093223281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1093223281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1093223281">
+Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "this.wait" is null<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.buyerOnboardingPage()'><b>buyerOnboardingPage</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validating Buyer Onboarding page</td>
+<td></td>
+<td>5</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.validateCropName()'><b>validateCropName</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validate crop name field</td>
+<td></td>
+<td>6</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+<tr>
+<td title='script.EditSalesOrderGodown.validateStartDate()'><b>validateStartDate</b><br>Test class: script.EditSalesOrderGodown<br>Test method: Validate start date field<br/>
+<a href="#Output-448131210" onClick='toggleBox("Output-448131210", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-448131210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-448131210">
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()=' Generate SO number ']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'INBNRMARITA', ip: '172.26.1.124', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e0134b429a4eec2ab1fba737c6a80e9, findElement {using=xpath, value=//div[text()=' Generate SO number ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\5028\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58472/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e0134b429a4eec2ab1fba737c6a80e9<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>script.EditSalesOrderGodown@25ce9dc4</td></tr>
+</table><p>
+</body>
+</html>
